@@ -20,6 +20,5 @@ _nvm_package_uninstall() {
     _osManager_packageUninstall "nvm"
 
     _zshrc_deleteLineIfExists '# [NVM] BELOW 3 LINES REQUIRED'
-    _zshrc_deleteLineIfExists 'export NVM_DIR="$HOME/.nvm"'
-    _zshrc_deleteLineIfExists '. $(brew --prefix nvm)/nvm.sh'
+    _zshrc_deleteLineIfExists 'source ~/.nvm/nvm.sh'
 }

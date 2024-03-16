@@ -19,7 +19,6 @@ _nvm_package_install() {
 
     _osManager_packageInstall "nvm"
 
-    _zshrc_addLineIfNotExists '# [NVM] BELOW 3 LINES REQUIRED'
-    _zshrc_addLineIfNotExists 'export NVM_DIR="$HOME/.nvm"'
-    _zshrc_addLineIfNotExists '. $(brew --prefix nvm)/nvm.sh'
+    _zshrc_addLineIfNotExists '# [NVM] BELOW 1 LINES REQUIRED'
+    _zshrc_addLineIfNotExists 'source ~/.nvm/nvm.sh'
 }
